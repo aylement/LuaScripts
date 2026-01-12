@@ -26,7 +26,7 @@ namespace ControllerExample
                 if (ped.IsInVehicle())
                 {
                     var veh = ped.CurrentVehicle;
-                    veh.LockStatus = VehicleLockStatus.CannotBeTriedToEnter;
+                    veh.LockStatus = VehicleLockStatus.IgnoredByPlayer;
                     Notify("Vehicle locked");
                 }
             }
